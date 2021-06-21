@@ -1,0 +1,51 @@
+<!Doctype HTML>
+<html>
+    <head>
+        <meta content="UTF-8">
+        <meta name="description" content="Floating Images">
+        <title>Floating Images</title>
+        <style type="text/css">
+            img{
+                margin-right: 10px; /*margin right will give the space 10px space b/w image and text in parargraph text*/
+            }
+            .float-right{
+                float:right;
+            }
+            .float-left{
+                float:left;
+            }
+            .clearfix::after{
+                content: ".";
+                display: block;
+                clear: both;
+                height: 0;
+                visibility: hidden;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Hello Everyone, how you all are doing </h1>
+        <p>Images are like boxes.</p>
+        <div>
+            <img src="dog.jpg" class="float-left" alt="dog" width="250px" height="200px" >
+            <p>This space b/w image and paragraph text coming from margin-right</p>
+            
+        </div>
+        
+        <div class="clearfix">
+            <img src="dog.jpg" class="float-right img1" alt="dog" width="250px" height="200px">
+            <p>This is a dog</p>
+        </div>
+        
+        <div class="clearfix">
+            <img src="dog.jpg" class="float-left" alt="dog" width="250px" height="200px">
+            <img src="dog.jpg" class="float-left" alt="dog" width="250px" height="200px">
+            <img src="dog.jpg" class="float-left" alt="dog" width="250px" height="200px" >
+
+
+
+        </div>
+        
+    </body>
+</html>

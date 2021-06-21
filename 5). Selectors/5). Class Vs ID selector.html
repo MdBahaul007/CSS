@@ -1,0 +1,36 @@
+<!Doctype HTML>
+<html>
+    <head>
+        <meta content="UTF-8">
+        <meta name="description" content="ID vs Class selector">
+        <title>ID vs class selector</title>
+        
+        <style type="text/css">
+            
+            .green-border{
+                border-color: green;
+                border-style: double;
+                color: aqua;
+            }
+            
+            #red-border{
+                border-color: red;
+                border-style: dotted;
+                color: black;
+            }
+            
+            .text-style{
+                font-family: cursive;
+                font-size: 20px;
+                font-stretch: extra-expanded;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 class="green-border" id="red-border">Hello Everyone, how you all are doing </h1>
+        <p><strong>When there is collision between the class and ID selector then ID selector is given preference over class selectr as we can see in syntax of heading tag.</strong></p>
+        <br><br>
+        <p class="green-border text-style" id="red-border">And when there is no collision selector is found than it is also applied like here in para tag, red and green border have collision so red tag which is id selector will given preference <u>but text style is not having any collision than it will also included.</u> </p>
+        
+    </body>
+</html>

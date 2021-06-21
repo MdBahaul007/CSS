@@ -1,0 +1,61 @@
+<!Doctype HTML>
+<html>
+    <head>
+        <meta content="UTF-8">
+        <meta name="description" content="Margin b/w Boxes">
+        <title>Margin b/w boxes.</title>
+        <style type="text/css">
+            .red-border{
+                color: red;
+                border-style: dotted;
+                border-width: 10px;
+                margin-bottom: 25px; /*it will given space 25px below text*/
+            }
+            .blue-border{
+                color: blue;
+                border-style: dashed;
+                border-width: 10px;
+                margin-top: 25px; /* it will give 25px space above text*/ 
+            }
+            .green-border{
+                color: green;
+                border-style: double;
+                border-width: 10px;
+                margin-left: 20px; /*it will be 20px left of the screen and 25px space above text*/
+                margin-top: 25px;
+            }
+            .orange-border{
+                color: orange;
+                border-style: groove;
+                border-width: 10px;
+                margin-right: 20px;
+                margin-top: 25px;
+                margin-bottom: 25px;
+                shape-margin: 10px solid red;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Hello Everyone, how you all are doing </h1>
+        <p> Margin between boxes is basically spacing between boxes</p>
+        
+        <div class="red-border">
+            <p>The space is 25px pixel below the text.</p>
+        </div>
+        
+        <div class="blue-border">
+            <p>25px of space will be given above the text.</p>
+        </div>
+        
+        <div class="green-border">
+            <p>It will give 20px space left of the screen and 25px space above text</p>
+        </div>
+        
+        <div class="orange-border">
+            <p>It will give 20px space right of the screen and 25px from below the screen and 25px above the screen. </p>
+        </div>
+        
+        
+        
+    </body>
+</html>

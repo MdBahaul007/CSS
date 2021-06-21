@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Display properties</title>
+    
+    <style>
+        /*for image and h2*/
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header{
+/*            border: 2px solid black;*/
+            width: 80%;
+            margin: auto;
+            margin-top: 20px;
+            
+        }
+        header img{
+            display: block;
+            width: 100px;
+            border-radius: 9999rem;
+            border: 2px solid red;
+            margin: 0 auto;
+        }
+        header h2{
+            text-align: center;
+        }
+    
+    </style>
+    
+    
+    <style>
+    /* For paragraphs  using inline-block*/
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container{
+           width: 97%;
+            margin:30px auto;
+            margin-left: 40px;
+            
+            
+        }
+        .box{
+            border: 2px solid red;
+            width: 30%;
+            margin: 10px;
+            padding: 10px;
+
+            display: inline-block;/*ab ye extra space jo right me khali hai wo mhi hai jitni width hai utni lega i.e 30%  tabhi dibbe upr aa jaige 1 line me.
+            
+*/
+            
+            
+        }
+    
+    </style>
+
+</head>
+
+   
+   
+<body>
+    <!--Display block & inline -->
+    <header>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNhjN1j5QTMvsc51ugfulEr0KZXMoMlAaf6w&usqp=CAU" alt="ms-dhoni">
+    <h2>MS. DHONI</h2>
+
+    </header>
+    <div class="container">
+        <div class="box">
+            <h3>1st para</h3>
+            <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.</p>
+        </div>
+           
+           <div class="box">
+            <h3>1st para</h3>
+            <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.</p>
+        </div>
+           
+           <div class="box">
+            <h3>1st para</h3>
+            <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.</p>
+        </div>
+    </div>
+    
+</body>
+    </html>

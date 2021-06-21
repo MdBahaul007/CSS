@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Visibility,display and z-index</title>
+    <style>
+        /*  Visbility       */
+        .box{
+            width: 100px;
+            height: 100px;
+            border: 2px solid black;
+            
+        }
+        #box1{
+            background-color: yellow;
+            
+        }
+        #box2{
+            background-color: blue;
+/*
+
+            visibility: hidden; box 2 will hide but its space will be reserved.
+            
+*/
+
+        }
+        #box3{
+            background-color: purple;
+            display: none; /* box 3 will be hideden as its space will also be not reserved.*/
+            
+        }
+        #box4{
+            background-color: green;
+            
+        }
+    </style>
+    
+    <style>
+        /*  z-index   */
+        .container1{
+            margin: 50px;
+            border: 2px solid red;
+        }
+        
+         #box5{
+            background-color: yellow;
+             position: relative;
+             top: 49px;
+             z-index: 35; /*jase it z-index 35 kra box 1 box-2 ke upr aa gya abhi tk wo niche tha.*/
+
+            
+        }
+        #box6{
+            background-color: blue;
+            position: relative;
+            top: 34px;
+
+        }
+        #box7{
+            background-color: purple;
+           
+            
+        }
+        #box8{
+            background-color: green;
+            
+        }
+      
+    
+    
+    </style>
+    
+    
+</head>
+<body>
+  
+    <div class="container">
+       <div class="box" id="box1"></div>
+       <div class="box" id="box2"></div>
+       <div class="box" id="box3"></div>
+       <div class="box" id="box4"></div>
+       
+       
+   </div>
+   
+   
+   
+    <div class="container1">
+       <div class="box" id="box5"></div>
+       <div class="box" id="box6"></div>
+       <div class="box" id="box7"></div>
+       <div class="box" id="box8"></div>
+       
+       
+   </div>
+    
+</body>
+</html>

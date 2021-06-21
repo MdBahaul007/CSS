@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Margin auto, float,clear</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            border: 2px solid red;
+            margin: 4px;
+            padding: 10px;
+            width: 1000px;
+            margin: 60px auto;/*upr niche 60 aur left light me width ke hisab se center me aa jaiga, margin auto ke liye width dena zaruri hai*/
+    
+        
+        }
+        .item{
+            border: 2px solid green;
+            margin: 4px;
+            padding: 20px;
+        }
+        #fruit{
+            width: 48%;        
+            float: left;
+            
+        }
+        #vegetable{
+            width: 48%;
+            float: left;
+        }
+        #sports{
+            width: 90%;
+            clear: both;
+        }
+        
+        h2{
+            text-align: center;
+            margin: 1rem;
+        }
+        h1{
+            text-align: center;
+        }
+    
+    
+    </style>
+</head>
+
+<body>
+   <div class="container">
+      <h1>My Shop</h1>
+       <div id="fruit" class="item">
+          <h2>Fruits</h2>
+           <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.</p>
+       </div>
+       
+       <div id="vegetable" class="item">
+          <h2>Vegetables</h2>
+           <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.</p>
+       </div>
+       
+       <div id="sports" class="item">
+          <h2>Sports</h2>
+           <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.</p>
+       </div>
+       
+       <div id="newe" class="item">
+          <h2>New</h2>
+           <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.</p>
+       </div>
+   </div>
+    
+</body>
+</html>

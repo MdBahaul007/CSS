@@ -1,0 +1,55 @@
+ *{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+        
+}
+.container{
+    width: 90%;
+    height: 600px;
+    border: 2px solid red;
+    margin: 10px;
+    padding: 30px;
+    
+    display: flex; /*flex parent ko dete hai tau child flex direction me aa jate hai*/
+
+    /*    flex-direction: column; */
+    
+    /*flex-direction: row-reverse;           
+    right me jaigai 1 number wla sbse right phir 2...aur 5 sbse left*/
+    
+    /*flex-direction: column-reverse 
+    sb coloum format me aajaigai 5 sbse upr aur 1 number wla sbse niche*/
+    
+/*
+    flex-direction: row;
+    flex-wrap: wrap
+*/
+
+/*    justify-content: center; all b0oxes will come in center.*/
+    
+/*    justify-content: space-between; hr dibbe ke bich me brabr space.*/
+    
+/*    justify-content: space-evenly;*/
+    
+/*    justify-content: space-around  side me km aur dibbe ke bich me even*/
+    
+/*    align-items: center; vertically centre ho jaigai note--horizontally nhi*/
+    
+/*    align-items: flex-end; bikl niche aa jigai container ke */
+    
+/*    align-items: flex-start;  container ke bikl top pe aa jaigai*/
+
+    
+    
+    
+    
+}
+.item{
+    width:100px;
+    height: 100px;
+    border: 2px solid green;
+    margin: 10px;
+    padding: 3px;
+}
+

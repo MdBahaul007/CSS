@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Positions in HTML.</title>
+    
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .continer{
+            margin:9px;
+            border: 2px solid blue;
+            height: 200vh;/*to test fixed and sticky position*/
+        
+            
+        }
+        .dibba{
+            border: 2px solid red;
+            width: 100px;
+            height: 100px;
+            margin: 6px;
+            display: inline-block;
+        }
+        /*RELATIVE me relative to its defualt postion change krta hai*/
+        #box1{
+            position: relative;
+            top:34px; 
+            left: 4px;
+            
+            /*1la dibba top se apni position se  34px niche aa gya aur apni nai poistion i.e 34px top se 4 px left hogya, this is relative postion.*/
+            
+        }
+        
+        /*ABSOLUTE postion me element position apne parent ke position se chage krta hai apne case me container hai parent*/
+        #box2{
+            position: absolute;
+            top:34px;
+            left: 48px;
+            /*2nd box container se 34px top me chala gya aur 48px left me aa gya */
+        }
+        
+        /*FIXED POSITION ME elemnt fixed rhta haai 
+        scroll kroge tau wo upr hi rhega--chat box use case */
+        #box3{
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+
+        }
+        
+        /*STICKY  position me element apne default position se chipak ke rhta hai*/
+    
+       #box4{
+           /*ye jb km krega jase iska parent container hai tau container ki height bhut hai agr body ki height bda de rhe hai tau km nhi kr rha hai so parent ke height ke hisab se work rha hai*/
+            position: sticky;
+            right: 40px;
+            top:3px;
+        }
+
+    
+    
+    
+    </style>
+    
+    
+    
+    
+</head>
+<body>
+   
+   <div class="continer">
+       <div class="dibba" id="box1">1</div>
+       <div class="dibba" id="box2">2</div>
+       <div class="dibba" id="box3">3</div>
+       <div class="dibba" id="box4">4</div>
+   </div>
+    
+</body>
+</html>

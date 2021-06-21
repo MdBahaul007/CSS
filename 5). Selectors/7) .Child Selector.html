@@ -1,0 +1,44 @@
+<!Doctype HTML>
+<html>
+    <head>
+        <meta content="UTF-8">
+        <meta name="description" content="child selector">
+        <title>Child Selector</title>
+    </head>
+    <style type="text/css">
+        p>a{
+            font-weight: bold;
+            color: red;
+            
+        }
+        
+        div>a{
+            font-weight: 300;
+            color: greenyellow;
+        }
+    </style>
+    <body>
+        <h1>Hello Everyone, how you all are doing </h1>
+        <p> p>a will be applied when we have anchor tag inside the para tag as shown below. Anchor is child and paragraph is parent.</p>
+        
+        <p>This is the <a href="">paragraph</a>of text. So p>a property will be applied to word paragraph as it is indide paragraph and anchor tag.</p>
+        
+        <hr />
+        <p>Another example</p>
+        <div>
+            <a href="">Hello</a> World.
+        </div>
+        
+        <hr />
+        
+        <p>If we have div tag and inside div tag we have para tag having anchor than p>a property will be applied due to higher preference of it.</p>
+        
+        <div>
+            <p>
+                hello <a href="">world</a> world will have property of p>a.
+            </p>
+        </div>
+        
+        
+    </body>
+</html>

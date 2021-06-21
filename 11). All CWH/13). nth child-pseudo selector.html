@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N-th child pseudo selector</title>
+
+
+    <style>
+        input[type='text'],input[type='password']
+        {
+            display: block;
+            background-color:darkgray;
+        }
+
+
+        .container{
+            width:233px;
+            margin: 0 auto;
+        }
+        /* li:nth-child(3){
+            /* background-color: blue;
+        } */
+        li:nth-child(2n+1){
+            background-color: aqua;
+        }/*jb +1 ho ta hai tau by default n ki value 0 leke chalta hai*/
+
+        li:nth-child(2n+0){
+            background-color: red;
+        }/*zero hai tau 2 se hi start karega */
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <form action="">
+            <label for="text">Name</label>
+            <input type="text" id="text" placeholder="Enter name">
+
+            <label for="pass">Password</label>
+            <input type="password" id="text" placeholder="Enter password">
+
+        </form>
+        <ul>
+        <li>Faiz</li>
+        <li>Faiz</li>
+        <li>Faiz</li>
+        <li>Faiz</li>
+        <li>Faiz</li>
+        <li>Faiz</li>
+        <li>Faiz</li>
+        <li>Faiz</li>
+        <li>Faiz</li>
+        <li>Faiz</li>
+
+        </ul>
+    </div>
+    
+</body>
+</html>
